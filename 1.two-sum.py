@@ -5,18 +5,16 @@
 #
 
 # @lc code=start
-from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i, num1 in enumerate(nums):
-            for j, num2 in enumerate(nums):
-                if i == j:
-                    continue
-                if num1 + num2 == target:
-                    return sorted([i, j])
-        raise ValueError
+    def twoSum(self, nums, target):
+        dic = {}
+        for i, num in enumerate(nums):
+            if num in dic:
+                return [dic[num], i]
+            else:
+                dic[target - num] = i
 
 
 # @lc code=end
