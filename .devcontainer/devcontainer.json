@@ -35,11 +35,11 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"LeetCode.vscode-leetcode",
-		"donjayamanne.githistory"
-	]
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "LeetCode.vscode-leetcode",
+        "donjayamanne.githistory"
+      ]
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
