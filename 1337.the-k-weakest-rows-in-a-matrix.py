@@ -10,10 +10,7 @@ from typing import List
 
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
-        soldiers = list(map(sum, mat))
-        l = [(i, s) for i, s in enumerate(soldiers)]
-        l.sort(key=lambda item: item[1])
-        return [item[0] for item in l[:k]]
+        return [item[1] for item in sorted([(sum(row), i) for i, row in enumerate(mat)])[:k]]
 
 
 # @lc code=end
